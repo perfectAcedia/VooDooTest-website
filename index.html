@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <title>VooDoo Test</title>
-    <script type="module" crossorigin src="/VooDooTest-website/assets/index-aacf960f.js"></script>
-    <link rel="stylesheet" href="/VooDooTest-website/assets/index-a57c2337.css">
+    <script type="module" crossorigin src="/VooDooTest-website/assets/index-0e8d5ac9.js"></script>
+    <link rel="stylesheet" href="/VooDooTest-website/assets/index-f493cbd1.css">
   </head>
   <body>
     <header
@@ -23,15 +23,19 @@
           class="flex w-full justify-between lg:items-start p-[24px] lg:py-[48px] lg:pl-[62px] lg:pr-[120px]"
         >
           <button class="h-[50px] lg:h-[100px]">
-            <img class="h-full" alt="VooDoo logo" src="/VooDooTest-website/assets/Vodo-logo-69cd0bb9.png" />
+            <img
+              class="h-full"
+              alt="VooDoo logo"
+              src="/VooDooTest-website/assets/Vodo-logo-69cd0bb9.png"
+            />
           </button>
           <div class="flex items-center gap-[16px] lg:gap-[48px]">
-            <button id="cartButton">
+            <button id="cartButton" class="hover:scale-110 duration-300">
               <img class="h-[24px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMySURBVHgB7dzxddMwEAbwDyboBhwbwAR4A9igYRJGKBskG9ANEiYoG0RMEDYI1kv96pc2liLfyZLy/d7TX1b75Jx1PsmJASIiIiIiordJ37Z9O/TtGNF+Pf8NKRDEf/DjdgCDoMJfzcfEtgXNdpzRDqDZUtLPuH0AXfQ+os8fzPMJdFFMAL737R/SCeiimAC4vn3u2yPScAYY+4bpe8ATyJSAldDiQpUSK6ELYu4BMVzgOO8DxtaYt1ZorUXvhWnNgLlrhdb4wsQXHxLqqBWAv6BzdzhlhkmcAbaC97530OMroTvQucnPWGsGeA50bhfqoBkApqHXNqEODICt38jo1vaEtpg+3y0yE9zOnpAgvBi7xwJuZU9ohXAAJOYfad4DPBc43sqeUOjq3iGyKtQOQOhGLKif9K0L9NkgUu4AtDADuog+0dWPdgBCe0ItBEAt/VgQtF0JCQqtfsZaroRWUKp+BtopyHOB4zWnIfX0YxGAVishgWL1M1giALXOgC6iz9V7PxYBaLUSKrr6GRO0VwkJKqh+xlqrhFZQrn4GFinIc4HjtaUhs/RjFYCWKiGBQfUzWCoANc2ALqJP8pMvqwC0VAlVU/2MCdqohASVVT9jLVRCKxhVPwOrFOS5wPEa0pB5+rEMQO2VkMCw+hksGYDSZ0AX0Wf2934sA1B7JVRl9TMmqLcSElRc/YzVWgmtYFz9DCxTkOcCx0tNQ9Wnn8Ea4SupxnYPJdYzoNVvTKt969k6AC3+dmwHxfTDGXC9DRRp/kbsktZ+O/YRFc0Ar6VZ4N8Y41AZwfy3bpXQqn4JoWDey/+W/uC34IuniIiIiIioYl3fHvq2x8tix79HYo1lFjtdYeMx4zfkfiK88nxAns270sZjyp+Av6pil/9PsD3p0sZjLuZKe+vKu5XxmBKkb4R10CcljSfH84AfSPcV+kobj7lrcu1520NfUePJ8UjyiHm0x1jUeHKkIJqQIwAO6SyeJzukUx9PjgA8Ip1FAEobj7kO6Tc9gb6usPFk4RcxJS18ShuPOW5FFMCfQMyVl3MzrqTxZCM4bfWOr8A9Tif6BflJYeMhIiIiIqLG/Qcoqzabug/I8QAAAABJRU5ErkJggg==" />
             </button>
             <button
               type="button"
-              class="px-3 py-2 font-bold text-center text-sm text-white !bg-black rounded hover:bg-blue-800"
+              class="px-3 py-2 font-bold text-center text-sm text-white !bg-black rounded hover:bg-blue-800 hover:scale-110 duration-300"
             >
               Sign-up
             </button>
@@ -50,7 +54,7 @@
       >
         <div class="flex w-full justify-between">
           <h2 class="text-white font-bold text-2xl">Shopping Cart</h2>
-          <button id="closeButton">
+          <button id="closeButton" class="hover:border rounded border-white">
             <img src="/VooDooTest-website/assets/cross-icon-4c97e259.svg" alt="cross icon" />
           </button>
         </div>
@@ -92,7 +96,7 @@
         </div>
         <div
           id="important"
-          class="font-medium text-sm w-full h-full bg-black rounded absolute bottom-0 duration-300 z-10"
+          class="font-medium text-sm w-full h-full text-white bg-black rounded absolute bottom-0 duration-300 z-10"
         >
           <h3
             id="importantInfo"
@@ -105,7 +109,8 @@
 
         <button id="arrowDown" class="z-20">
           <img
-            class="w-[24px] h-[24px] mr-[20px]"
+            id="arrowIcon"
+            class="w-[24px] h-[24px] mr-[20px] hover:scale-125  origin-center rotate-0 duration-300"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIPSURBVHgB7dpfTtRgFIbx8xX/ZIwXeGn0AnfgLIGluARX4hJcgu5g3IHuQC4MXMqFsQGGlr4QSAgwMx1O23PI87uBZAj5+j405aJmAAAAAAAAAAAAAAAAAAAAAAAA92jro71lfbRY/j/8u6wP2+7rt7r+vWdJjHn+Ys50+PO2/dn95t3bH7THTdPuv3j9/pcFdvrvz8eqqhb3nf+snM5nsw8H5qgyZ+el/XLn8FLKblWVhS7QgnpwfOnO/9xefjVn7neAbtmVPxD0Tlg5/rXu7M9evXtjjtzvAGvteOXnAe+EjcaX7uzmzD9AsfV/2YEibDy+tPbdnLkH2LHyae1dIAEi9By/ewiffDZn7gHK7O1B0zT70SP0HV/X5P0fkLg/hK/1u8BxH8zbjD/U2QYLIBEjRBpfBg0gkSJEG18GDyARIkQcX0YJIFNGiDq+jBZApogQeXwZNYCMGSH6+DJ6ABkjQobxZZIAMmSELOPLZAFkiAiZxpdJA4hnhGzjy+QBxCNCxvElRAB5TISs40uYALJNBH2bdXwJFUD6Rri8hKTjS7gA0ivCJoKOLyEDiFuEwONL2ADy6AjBx5fQAWTrCAnGl/ABpHeEJONLigCycYRE40uaALI2QrLxJVUAefjl2Xzji/+bcQPTwDulzG/eUrt6/+jHWTmZZxsfAAAAAAAAAAAAAAAAAAAAAAA8DRe0FByqE6iMdAAAAABJRU5ErkJggg=="
             alt="arrow icon"
           />
@@ -149,7 +154,7 @@
         </nav>
         <img
           class="h-[80px] w-[80px] lg:ml-[40px]"
-          src="./src/assets//icons/V-logo.png"
+          src="V-logo.png"
           alt="VooDoo logo"
         />
       </div>
