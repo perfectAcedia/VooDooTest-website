@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Space Grotesk', sans-serif;
+  src: url(/src//assets/SpaceGrotesk/SpaceGrotesk-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Space Grotesk', sans-serif;
+  src: url(/src//assets/SpaceGrotesk/SpaceGrotesk-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Space Grotesk', sans-serif;
+  src: url(/src//assets/SpaceGrotesk/SpaceGrotesk-Bold.ttf);
+  font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#cartList::-webkit-scrollbar {
+  display: none;
+}
