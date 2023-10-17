@@ -36,7 +36,7 @@ export function addProductHTML(product) {
         </div>
     </div>
     <button id="trash" name="trash" class="absolute top-0 right-0">
-        <img src="/trash-icon.svg" alt="trash icon" />
+        <img src="./src/assets/icons/trash-icon.svg" alt="trash icon" />
     </button>`;
 
   element.appendChild(newElement);
