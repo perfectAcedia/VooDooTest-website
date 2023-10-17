@@ -8,15 +8,15 @@ import {
 import createPagination from "./pagination";
 import { normalizedPrice } from "./utils";
 
-const PRODUCT_LIST = await getProductList();
-const arrayOfProducts = PRODUCT_LIST.products;
 const totalCostElement = cart
   .querySelector("#footer")
   .querySelector("#totalPrice")
   .querySelector("#quantity");
 const cartProducts = new Map();
 
-export default function createProductList() {
+export default async function createProductList() {
+  const PRODUCT_LIST = await getProductList();
+  const arrayOfProducts = PRODUCT_LIST.products;
   let currentPage = 1;
   let itemsPerPage = 24;
 
