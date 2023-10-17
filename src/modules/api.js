@@ -11,3 +11,17 @@ export default async function getProductList() {
       throw error;
     }
   }
+
+// export default function getProductList() {
+//   return fetch("https://voodoo-sandbox.myshopify.com/products.json")
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error("Network response was not ok");
+//       }
+//       return response.json();
+//     })
+//     .catch((error) => {
+//       console.error("Error fetching data:", error);
+//       throw error;
+//     });
+// }

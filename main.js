@@ -12,6 +12,8 @@ const importantElement = document.getElementById("important");
 const importantInfoElement = document.getElementById("importantInfo");
 let isInfoOpen = false;
 
+
+textRender(window.innerWidth);
 createProductList();
 
 cartButton.addEventListener("click", () => {
