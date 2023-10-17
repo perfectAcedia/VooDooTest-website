@@ -28,13 +28,11 @@ cartButton.addEventListener("click", () => {
 
 arrowButton.addEventListener("click", () => {
   if (!isInfoOpen) {
-    // importantElement.classList.remove("bottom-0");
     importantElement.style.bottom = '-70px'
     importantInfoElement.classList.remove("hidden");
     importantInfoElement.classList.add("flex");
     isInfoOpen = true;
   } else {
-    // importantElement.classList.add("bottom-0");
     importantElement.style.bottom = '0'
     importantInfoElement.classList.remove("flex");
     importantInfoElement.classList.add("hidden");
