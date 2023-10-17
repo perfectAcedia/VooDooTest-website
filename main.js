@@ -32,15 +32,15 @@ arrowButton.addEventListener("click", () => {
     importantElement.style.bottom = '-65px';
     importantInfoElement.classList.remove("hidden");
     importantInfoElement.classList.add("flex");
-    arrowIcon.classList.remove('rotate-0')
-    arrowIcon.classList.add('rotate-180');
+    arrowIcon.style.transform = 'rotate(180deg)'
     isInfoOpen = true;
   } else {
     importantElement.style.bottom = '0';
     importantInfoElement.classList.remove("flex");
     importantInfoElement.classList.add("hidden");
-    arrowIcon.classList.remove('rotate-180')
-    arrowIcon.classList.add('rotate-0')
+    arrowIcon.style.transform = 'rotate(0)'
+    // arrowIcon.classList.remove('rotate-180')
+    // arrowIcon.classList.add('rotate-0')
     isInfoOpen = false;
   }
 });
