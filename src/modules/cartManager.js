@@ -20,7 +20,7 @@ export function addProductHTML(product) {
   newElement.innerHTML = `
     <div id="image" class="border border-white w-[74px] rounded opacity-50">
         <img class="w-full h-full" src="${
-          image?.src || "./src/assets/icons/V-logo.png"
+          image?.src || "../../src/assets/icons/V-logo.png"
         }" alt="product foto" />
     </div>
     <div id="properties" class="flex flex-col gap-y-[12px] font-bold text-sm text-white">

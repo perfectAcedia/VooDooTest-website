@@ -28,7 +28,7 @@ cartButton.addEventListener("click", () => {
 
 arrowButton.addEventListener("click", () => {
   if (!isInfoOpen) {
-    importantElement.style.bottom = '-70px'
+    importantElement.style.bottom = '-65px'
     importantInfoElement.classList.remove("hidden");
     importantInfoElement.classList.add("flex");
     isInfoOpen = true;
