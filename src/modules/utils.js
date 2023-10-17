@@ -1,15 +1,6 @@
 let totalPrice = 0;
 
 export function normalizedPrice(price) {
-  // const secondPart = price.split(".")[1];
-  // const changedPrice = price;
-
-  // for (const number in secondPart) {
-  //   if (number !== 0) {
-  //     return Number(changedPrice);
-  //   }
-  // }
-
   return Math.round(Number(price) * 100) / 100;
 }
 

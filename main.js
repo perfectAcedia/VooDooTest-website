@@ -2,8 +2,6 @@ import createProductList from "./src/modules/productList";
 import { textRender } from "./src/modules/utils";
 import "./style.css";
 
-// const PRODUCT_LIST = await getProductList();
-// const arrayOfProducts = PRODUCT_LIST.products;
 const cartButton = document.getElementById("cartButton");
 const arrowButton = document.getElementById("arrowDown");
 const arrowIcon = document.getElementById('arrowIcon')
@@ -39,8 +37,6 @@ arrowButton.addEventListener("click", () => {
     importantInfoElement.classList.remove("flex");
     importantInfoElement.classList.add("hidden");
     arrowIcon.style.transform = 'rotate(0)'
-    // arrowIcon.classList.remove('rotate-180')
-    // arrowIcon.classList.add('rotate-0')
     isInfoOpen = false;
   }
 });
