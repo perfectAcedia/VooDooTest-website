@@ -18,7 +18,7 @@ export function addProductHTML(product) {
   newElement.classList.add("flex", "justify-start", "gap-[18px]", "relative");
   newElement.setAttribute("id", id);
   newElement.innerHTML = `
-    <div id="image" class="border border-white w-[74px] rounded opacity-50">
+    <div id="image" class="border border-white w-[74px] rounded opacity-1">
         <img class="w-full h-full" src="${
           image?.src || "V-logo.png"
         }" alt="product foto" />
@@ -30,12 +30,12 @@ export function addProductHTML(product) {
             <h3 id="currency">KR.</h3>
         </div>
         <div id="counter" class="flex">
-            <button id="decrease" class="w-[20px] h-[20px]">-</button>
+            <button id="decrease" class="w-[20px] h-[20px] box-border first-line: hover:border rounded border-white">-</button>
             <h3 id="quantity" class="w-[20px] h-[20px] text-center">1</h3>
-            <button id="increase" class="w-[20px] h-[20px]">+</button>
+            <button id="increase" class="w-[20px] h-[20px] box-border hover:border rounded border-white">+</button>
         </div>
     </div>
-    <button id="trash" name="trash" class="absolute top-0 right-0">
+    <button id="trash" name="trash" class="absolute top-0 right-0 hover:scale-110 duration-300">
         <img src="trash-icon.svg" alt="trash icon" />
     </button>`;
 

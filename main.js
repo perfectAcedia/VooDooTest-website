@@ -6,6 +6,7 @@ import "./style.css";
 // const arrayOfProducts = PRODUCT_LIST.products;
 const cartButton = document.getElementById("cartButton");
 const arrowButton = document.getElementById("arrowDown");
+const arrowIcon = document.getElementById('arrowIcon')
 const sideMenu = document.getElementById("sideMenu");
 const closeButton = document.getElementById("closeButton");
 const importantElement = document.getElementById("important");
@@ -28,14 +29,18 @@ cartButton.addEventListener("click", () => {
 
 arrowButton.addEventListener("click", () => {
   if (!isInfoOpen) {
-    importantElement.style.bottom = '-65px'
+    importantElement.style.bottom = '-65px';
     importantInfoElement.classList.remove("hidden");
     importantInfoElement.classList.add("flex");
+    arrowIcon.classList.remove('rotate-0')
+    arrowIcon.classList.add('rotate-180');
     isInfoOpen = true;
   } else {
-    importantElement.style.bottom = '0'
+    importantElement.style.bottom = '0';
     importantInfoElement.classList.remove("flex");
     importantInfoElement.classList.add("hidden");
+    arrowIcon.classList.remove('rotate-180')
+    arrowIcon.classList.add('rotate-0')
     isInfoOpen = false;
   }
 });

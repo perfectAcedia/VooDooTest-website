@@ -48,20 +48,18 @@ export default async function createProductList() {
                     </div>
                   </div>
                   <div class="mt-[10px] flex justify-between">
-                    <div class="flex flex-col font-bold text-sm">
-                      <h3 class="">${product.title}</h3>
-                      <h3 class="">${normalizedPrice(price) + ` KR.`}</h3>
-                    </div>
-                    <div class="flex flex-col text-sm">
-                      <h3 class="font-medium flex justify-end">Condition</h3>
-                      <h3 class="font-normal flex justify-end">Rating</h3>
-                    </div>
+                    <h3 class="line-clamp-1 font-bold text-sm">${product.title}</h3>
+                    <h3 class="font-medium">Condition</h3>
+                  </div>
+                  <div class="flex justify-between">
+                      <h3 class="font-bold text-sm">${normalizedPrice(price) + ` KR.`}</h3>
+                      <h3 class="font-normal">Rating</h3>
                   </div>
                   <button
                     name="addButton"
                     data-id="${product.id}"
                     type="button"
-                    class="disabled:opacity-50 mt-[10px] px-3 py-2 w-full h-[42px] font-bold text-center text-sm text-white !bg-black rounded hover:bg-blue-800"
+                    class="disabled:opacity-50 mt-[10px] px-3 py-2 w-full h-[42px] font-bold text-center text-sm text-white bg-black rounded hover:scale-110 duration-300"
                   >
                     ADD TO CART
                   </button>
@@ -113,7 +111,9 @@ export default async function createProductList() {
       "h-[39px]",
       "flex",
       "justify-center",
-      "items-center"
+      "items-center",
+      "hover:scale-110",
+      "duration-300"
     );
     newElement.textContent = page;
 
