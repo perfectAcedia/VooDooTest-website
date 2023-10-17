@@ -20,7 +20,7 @@ export function addProductHTML(product) {
   newElement.innerHTML = `
     <div id="image" class="border border-white w-[74px] rounded opacity-50">
         <img class="w-full h-full" src="${
-          image?.src || "../../src/assets/icons/V-logo.png"
+          image?.src || "V-logo.png"
         }" alt="product foto" />
     </div>
     <div id="properties" class="flex flex-col gap-y-[12px] font-bold text-sm text-white">
@@ -36,7 +36,7 @@ export function addProductHTML(product) {
         </div>
     </div>
     <button id="trash" name="trash" class="absolute top-0 right-0">
-        <img src="./src/assets/icons/trash-icon.svg" alt="trash icon" />
+        <img src="trash-icon.svg" alt="trash icon" />
     </button>`;
 
   element.appendChild(newElement);

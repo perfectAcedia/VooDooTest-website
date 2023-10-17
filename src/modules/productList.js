@@ -39,7 +39,7 @@ export default async function createProductList() {
       newElement.innerHTML = `
                   <div class="border relative rounded h-[300px] w-full">
                     <img class="w-full h-full" src="${
-                      image?.src || "../../src/assets/icons/V-logo.png"
+                      image?.src || "V-logo.png"
                     }" alt="product foto">
                     <div
                       class="absolute top-[10px] left-[10px] h-[24px] !bg-black rounded"
