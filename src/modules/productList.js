@@ -35,7 +35,7 @@ export default async function createProductList() {
       const price = product.variants[0].price;
       const source = product.vendor;
 
-      newElement.classList.add("h-full", "lg:max-w-[300px]", "mx-auto");
+      newElement.classList.add("h-full", "w-full", "lg:max-w-[300px]", "mx-auto");
       newElement.innerHTML = `
                   <div class="border relative rounded h-[300px] w-full">
                     <img class="w-full h-full" src="${
@@ -48,7 +48,7 @@ export default async function createProductList() {
                     </div>
                   </div>
                   <div class="mt-[10px] flex justify-between">
-                    <h3 class="line-clamp-1 font-bold text-sm">${product.title}</h3>
+                    <h3 class="w-3/4 lg:w-full line-clamp-1 font-bold text-sm">${product.title}</h3>
                     <h3 class="font-medium">Condition</h3>
                   </div>
                   <div class="flex justify-between">
